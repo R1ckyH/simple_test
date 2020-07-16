@@ -8,4 +8,4 @@ You can execute `pip install jproperties` to install it
 
 Type `!!test` to get test information
 
-Type `!!restart!` to restart server
+Type `!!restart` to restart server
