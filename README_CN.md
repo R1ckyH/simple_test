@@ -1,5 +1,7 @@
 # simple_test
 -----
+[English](https://github.com/rickyhoho/simple_test/blob/master/README.md)
+
 一个[MCDReforged](https://github.com/Fallen-Breath/MCDReforged)的自检插件
 
 你需要下载python模块[jproperties](https://pypi.org/project/jproperties/)去使用插件的全部功能
