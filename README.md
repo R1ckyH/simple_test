@@ -1,6 +1,6 @@
 # simple_test
 -----
-[中文](https://github.com/rickyhoho/simple_test/blob/master/README_CN.md)
+[中文](https://github.com/rickyhoho/simple_test/blob/master/README_cn.md)
 
 A plugin to check [MCDReforged](https://github.com/Fallen-Breath/MCDReforged) basic issue
 
