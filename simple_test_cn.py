@@ -49,7 +49,6 @@ error_module = system_return + '''安装 §cpython§r 模块 [§ejproperties§r]
 def get_ymal():
     with open(yml, 'r') as y:
         content = yaml.load(y, Loader = yaml.Loader)
-        print(content['rcon'])
         return content['rcon']
 
 
