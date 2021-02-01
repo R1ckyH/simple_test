@@ -4,9 +4,9 @@
 
 A plugin to check [MCDReforged1.x](https://github.com/Fallen-Breath/MCDReforged) basic issue
 
-You have to install python module [jproperties](https://pypi.org/project/jproperties/) to use the full function of simple_test
+You have to install python module [javaproperties](https://pypi.org/project/javaproperties/) to use the full function of simple_test
 
-You can execute `pip install jproperties` to install it
+You can execute `pip install javaproperties` to install it
 
 Type `!!test` to get test information
 

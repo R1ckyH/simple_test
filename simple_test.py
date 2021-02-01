@@ -44,7 +44,7 @@ error_rcon_port = error + '''§aRcon port§r of §eserver.properties§r is not e
 error_rcon_password = error + '''§aRcon password§r of §eserver.properties§r is not equal to §econfig.yml
 §cPlease correct them to same to ensure server run correctly§r'''
 error_module = system_return + '''Install §cpython§r module §cjproperties§r for more information
-''' + system_return + '''Use §7pip install jproperties§r to get the module of python'''
+''' + system_return + '''Use ''' + RText('''§7pip install javaproperties§r''').h('click me to copy to clipboard').c(RAction.copy_to_clipboard, 'pip install javaproperties') +''' to get the module of python'''
 
 def get_ymal():
     with open(yml, 'r') as y:
@@ -70,24 +70,23 @@ def error_msg(src, num):
 
 def properties_check(src, config_list):
     try:
-        from jproperties import Properties
-        p_list = Properties()
+        import javaproperties as jp
         with open(properties_path, "rb") as f:
-            p_list.load(f, encoding = 'utf-8')
-        if p_list.get('enable-rcon').data:
+            p_list = jp.load(f)
+        if p_list['enable-rcon']:
             src.reply(system_return + '''§eServer's§arcon §ris §bopened''')
         else:
             src.reply(system_return + '''§eServer's§arcon §ris §bclosed''')
-        src.reply(system_return + "§eServer's §aport§r is §d[" + str(p_list.get('server-port').data) + ']§r')
+        src.reply(system_return + "§eServer's §aport§r is §d[" + str(p_list['server-port']) + ']§r')
         src.reply(system_return + "§eMCDR's§r §arcon port§r is §d[" + str(config_list['port']) + ']§r')
-        src.reply(system_return + "§eServer's§r §arcon port§r is §d[" + str(p_list.get('rcon.port').data) + ']§r')
+        src.reply(system_return + "§eServer's§r §arcon port§r is §d[" + str(p_list['rcon.port']) + ']§r')
         src.reply(system_return + "§eMCDR's §r§arcon ip is §d[" + str(config_list['address']) + ']§r')
         if config_list['enable']:
-            if str(p_list.get('rcon.port').data) == str(config_list['port']):
+            if str(p_list['rcon.port']) == str(config_list['port']):
                 src.reply(system_return + '§aRcon port§r are §bsame')
             else:
                 error_msg(src, 1)
-            if p_list.get('rcon.password').data == config_list['password']:
+            if str(p_list['rcon.password']) == config_list['password']:
                 src.reply(system_return + '§aRcon password§r are §bsame')
             else:
                 error_msg(src, 2)

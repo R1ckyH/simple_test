@@ -43,8 +43,8 @@ error_rcon_port = error + '''§eserver.properties§r 和 §econfig.yml§r 的 §
 §c为了让服务器得以正常运行， 请修改他们!!!§r'''
 error_rcon_password = error + '''§eserver.properties§r 和 §econfig.yml§r 的 §arcon password§r 不一致
 §c为了让服务器得以正常运行， 请修改他们!!!§r'''
-error_module = system_return + '''安装 §cpython§r 模块 [§ejproperties§r]以获得更多资讯
-''' + system_return + '''使用 §7pip install jproperties§r 来为python 安装此模块'''
+error_module = system_return + '''安装 §cpython§r 模块 [§ejavaproperties§r]以获得更多资讯
+''' + system_return + '''使用'''+ RText('''§7pip install javaproperties§r''').h('点击我复制到剪贴板').c(RAction.copy_to_clipboard, 'pip install javaproperties') +''' 来为python 安装此模块'''
 
 def get_ymal():
     with open(yml, 'r') as y:
@@ -70,24 +70,23 @@ def error_msg(src, num):
 
 def properties_check(src, config_list):
     try:
-        from jproperties import Properties
-        p_list = Properties()
+        import javaproperties as jp
         with open(properties_path, "rb") as f:
-            p_list.load(f, encoding = 'utf-8')
-        if p_list.get('enable-rcon').data:
+            p_list = jp.load(f)
+        if p_list['enable-rcon']:
             src.reply(system_return + '§e服务器的§arcon §r已经§b开启')
         else:
             src.reply(system_return + '§e服务器§arcon §r已经§c关闭§r')
-        src.reply(system_return + '§e服务器§e端口§r是§d[' + str(p_list.get('server-port').data) + ']§r')
+        src.reply(system_return + '§e服务器§e端口§r是§d[' + str(p_list['server-port']) + ']§r')
         src.reply(system_return + "§eMCDR§r的§arcon port§r是§d[" + str(config_list['port']) + ']§r')
-        src.reply(system_return + "§e服务器§r的§arcon port§r是§d[" + str(p_list.get('rcon.port').data) + ']§r')
+        src.reply(system_return + "§e服务器§r的§arcon port§r是§d[" + str(p_list['rcon.port']) + ']§r')
         src.reply(system_return + "§eMCDR§r的§arcon ip§r是§d[" + str(config_list['address']) + ']§r')
         if config_list['enable']:
-            if str(p_list.get('rcon.port').data) == str(config_list['port']):
+            if str(p_list['rcon.port']) == str(config_list['port']):
                 src.reply(system_return + '§aRcon port§b 一致')
             else:
                 error_msg(src, 1)
-            if p_list.get('rcon.password').data == config_list['password']:
+            if str(p_list['rcon.password']) == config_list['password']:
                 src.reply(system_return + '§aRcon password§b 一致')
             else:
                 error_msg(src, 2)
