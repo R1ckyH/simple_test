@@ -3,6 +3,7 @@ import ruamel.yaml as yaml
 from mcdreforged.api.types import *
 from mcdreforged.api.command import *
 from mcdreforged.api.rtext import *
+from mcdreforged.api.decorator.new_thread import new_thread
 
 
 PLUGIN_METADATA = {
@@ -94,6 +95,7 @@ def properties_check(src, config_list):
         error_msg(src, 3)
 
 
+@new_thread('testing')
 def test(src : CommandSource):
     if src.is_player:
         src.reply(system_return + 'Player §d' + src.player)
