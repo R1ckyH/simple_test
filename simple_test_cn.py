@@ -10,7 +10,7 @@ PLUGIN_METADATA = {
     'id': 'simple_test',
     'version': '2.1.2-cn',
     'name': 'simple_test_cn',
-    'description': '服务器温度警报插件.',
+    'description': '服务器自检插件.',
     'author': 'ricky',
     'link': 'https://github.com/rickyhoho/simple_test',
     'dependencies': {

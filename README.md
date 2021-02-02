@@ -9,5 +9,3 @@ You have to install python module [javaproperties](https://pypi.org/project/java
 You can execute `pip install javaproperties` to install it
 
 Type `!!test` to get test information
-
-Type `!!restart` to restart server

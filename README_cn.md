@@ -9,4 +9,3 @@
 你可以执行`pip install javaproperties`来安装模块
 
 输入 `!!test` 来获得检查资讯
-输入 `!!restart` 重启服务器
