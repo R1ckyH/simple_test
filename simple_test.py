@@ -12,7 +12,7 @@ PLUGIN_METADATA = {
     'name': 'simple_test',
     'description': 'testing server problem.',
     'author': 'ricky',
-    'link': 'https://github.com/rickyhoho/simple_test',
+    'link': 'https://github.com/R1ckyH/simple_test',
     'dependencies': {
         'mcdreforged': '>=1.0.0'
     }
