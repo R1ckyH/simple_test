@@ -1,0 +1,27 @@
+simple_test.click_msg: "点击我"
+simple_test.to_clipboard: "复制到粘贴板"
+simple_test.main_msg: "服务器自检插件。"
+simple_test.rcon_opened: "§e服务器的§arcon §r已经§b开启"
+simple_test.rcon_closed: "§e服务器的§arcon §r已经§c关闭"
+simple_test.server_port: "§e服务器§e端口§r是§d[{}]§r"
+simple_test.mcdr_rcon_port: "§eMCDR§r的§arcon port§r是§d[{}]§r"
+simple_test.server_rcon_port: "§e服务器§r的§arcon port§r是§d[{}]§r"
+simple_test.mcdr_rcon_ip: "§eMCDR§r的§arcon ip§r是§d[{}]§r"
+simple_test.rcon_port_same: "§aRcon port§b 一致"
+simple_test.rcon_pass_same: "§aRcon password§b 一致"
+simple_test.player: "玩家名 §d{}"
+simple_test.permission_level: "你的§a权限等级§r是§d[{}]§r"
+simple_test.mcdr_rcon_enable: "§eMCDR的§arcon §r已经§b开启"
+simple_test.mcdr_rcon_disable: "§eMCDR§arcon §r已经§c关闭§r"
+simple_test.rcon_running: "§e服务器§arcon §b正在运行"
+simple_test.rcon_not_running: "§e服务器§arcon §c没有运行"
+simple_test.error_permission: "你需要获得§d[admin]§c以上的权限去获取更多资讯§r"
+simple_test.error_rcon_port: |
+  §eserver.properties§r 和§e config.yml§r 的§a rcon port§r 不一致
+  §c为了让服务器得以正常运行， 请修改他们!!!§r
+simple_test.error_rcon_password: |
+  §eserver.properties§r 和§e config.yml§r 的§a rcon password§r 不一致
+  §c为了让服务器得以正常运行， 请修改他们!!!§r
+simple_test.error_module: |
+  安装 §cpython§r 模块 [§ejavaproperties§r]以获得更多资讯
+  {}使用 {} 来为python 安装此模块'''

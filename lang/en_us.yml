@@ -1,0 +1,27 @@
+simple_test.click_msg: "Click me to"
+simple_test.to_clipboard: " copy to clipboard."
+simple_test.main_msg: "testing server problem."
+simple_test.rcon_opened: "§eServer's§a rcon§r is§b opened"
+simple_test.rcon_closed: "§eServer's§a rcon§r is§c closed"
+simple_test.server_port: "§eServer's§a port§r is §d[{}]§r"
+simple_test.mcdr_rcon_port: "§eMCDR's§a rcon port§r is §d[{}]§r"
+simple_test.server_rcon_port: "§eServer's§a rcon port§r is §d[{}]§r"
+simple_test.mcdr_rcon_ip: "§eMCDR's§a rcon ip is §d[{}]§r"
+simple_test.rcon_port_same: "§aRcon port§r are§b same"
+simple_test.rcon_pass_same: "§aRcon password§r are§b same"
+simple_test.player: "Player §d{}"
+simple_test.permission_level: "Your§a permission level§r is §d[{}]§r"
+simple_test.mcdr_rcon_enable: "§eMCDR's§a rcon§r are§b enabled"
+simple_test.mcdr_rcon_disable: "§eMCDR's§a rcon§r are§c disabled§r"
+simple_test.rcon_running: "§eServer's§a rcon§r is§b running"
+simple_test.rcon_not_running: "§eServer's§a rcon§r is§c not running"
+simple_test.error_permission: "You should have §d[helper]§r§c or higher permission to get more status§r"
+simple_test.error_rcon_port: |
+  §aRcon port§r of§e server.properties§r is not equal to§e config.yml
+  §cPlease correct them to same to ensure server run correctly§r
+simple_test.error_rcon_password: |
+  §aRcon password§r of§e server.properties§r is not equal to§e config.yml
+  §cPlease correct them to same to ensure server run correctly§r
+simple_test.error_module: |
+  Install§c python§r module§c javaproperties§r for more information
+  {}Use {} to get the module of python

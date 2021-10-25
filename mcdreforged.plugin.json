@@ -1,0 +1,21 @@
+{
+    "id": "simple_test",
+    "version": "3.0.0",
+    "name": "simple_test",
+    "description": {
+		"en_us": "testing basic server problem.",
+		"zh_cn": "服务器基础自检插件。"
+	},
+    "author": [
+	    "Ricky"
+    ],
+    "link": "https://github.com/R1ckyH/simple_test",
+    "dependencies": {
+        "mcdreforged": ">=2.0.0"
+    },
+	"archive_name": "simple_test-{version}",
+	"resources": [
+		"LICENSE",
+		"lang"
+	]
+}
